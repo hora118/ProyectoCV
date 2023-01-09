@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+* Author: Horacio Locatelli
+* Telefono: 342-4069857
+* mail: horacio.locatelli@gmail.com
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow, all" />
+        <meta name="Author" content="Horacio Locatelli" />
+        <meta name="description" content=""/>
+        <meta content="" name="keywords">
+
+        <title>Proyecto CV</title>
+         <!-- Favicons -->
+        <link href="img/icono.png" rel="icon">
+        <link href="img/icono.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200&display=swap" rel="stylesheet">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- Vendor CSS Files -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="title">Proyecto CVs</h1>
+        <table>
+            <tr>
+                <td colspan="2"> <img id="imagen" src="" title="Imagen portada"  class='imgRedonda' /> </td>
+            </tr>
+            <tr colspan="2" >
+                <td class="etiqueta"><i class="fa fa-address-card"></i>Datos Personales </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <h2 class ="centrado" ><b id="name"></b> </h2> </td>
+            </tr>
+            <tr>
+                <td colspan="1" class="borde"><i class="fa fa-gift"></i> Edad: <b id="edad"></b> </h2> </td>
+                <td colspan="1"><i class="fa fa-calendar"></i> Fecha de Naciento: <b id="Fnac"></b> </h2> </td>
+            </tr>
+            <tr colspan="2" >
+                <td class="etiqueta"><i class="fa fa-folder-open-o" ></i>Datos de Contacto </td>
+            </tr>
+            <tr>
+                <td colspan="1" class="borde"><i class="fa fa-bell-o"></i> Telefono: <b id="tel"></b> </h2> </td>
+                <td colspan="1"><i class="fa fa-bell-o"></i> Celular: <b id="cel"></b> </h2> </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="borde"><i class="fa fa-street-view"></i> Direccion: <b id="direc"></b> </h2> </td>
+                
+            </tr>
+            <tr>
+                <td colspan="1" class="borde"> País: <b id="pais"></b> </h2> </td>
+                <td colspan="1"> Provincia-Ciudad : <b id="prov"></b> </h2> </td>
+            </tr>
+        </table>
+       
+        <p>
+            
+        </p>
+        
+
+        <button onclick="lleerUrl()">Siguiente</button>
+    </body>
+    <script src="js/data.js"></script>
+</html>
