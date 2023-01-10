@@ -12,6 +12,8 @@ function lleerUrl(){
 }
 function leovariables(variable){
     let datos = variable['0'];
+    document.body.style.backgroundColor = colorDeFondo();
+    document.getElementById('table').style.backgroundColor = colorDeFondo();
     nya = datos.name.title +" "+  datos.name.first+ " " + datos.name.last
     document.getElementById('name').innerHTML = nya ;
     document.getElementById('imagen').src = datos.picture.medium;
@@ -23,4 +25,9 @@ function leovariables(variable){
     document.getElementById('pais').innerHTML = datos.location.country;
     document.getElementById('prov').innerHTML = datos.location.state +" - " +datos.location.city;
     document.getElementById('direc').innerHTML = datos.location.street.name +" "+datos.location.street.number;
+
+}
+function colorDeFondo(){
+    const colores = ["aqua", "azure", "aquamarine", "burlywood", "cyan", "lightblue","lightgreen"];
+    return  colores[Math.floor(Math.random() * colores.length)];
 }
